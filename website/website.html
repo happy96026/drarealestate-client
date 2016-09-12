@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dean's Research Award</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<!-- Loading Bootstrap -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    	<!-- <link rel="stylesheet" href="bootstrap.css"> -->
+    	<!-- <link rel="stylesheet" href="bootstrap-responsive.css"> -->
+
+
+   		<!-- Loading Flat UI -->
+   		<link rel="stylesheet" href="flat-ui.css">
+   		<link rel="stylesheet" href="flat-ui-switches.css">
+	    <link rel="stylesheet" href="flatui-colorDrop.css">
+
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="map.css">
+	</head>
+
+	<form>
+		<input type="hidden" id="Neighbourhood">
+		<input type="hidden" id="data">
+	</form>
+
+
+	<body>
+		<nav class="navbar navbar-default navbar-static-top">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Dean's Research Award</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="link"><a href="#">Home</a></li>
+		        <li class="link"><a href="#">About</a></li>
+		        <li class="link"><a href="#">Data Visualization</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container">
+			<div class="main">
+				<div class="map">
+					<div class="title">Map</div>
+				   	<div id="sidebar" class="wet-asphalt">
+				        <header>
+				            <h3>Map Styles</h3>
+				        </header>
+
+				        <ul class="sidebar-options">
+				            <li>
+				                <h5>Hue</h5>
+				                <div id="hue-list" class="btn-group select colors">
+				                    <i class="dropdown-arrow"></i>
+				                    <button class="btn dropdown-toggle clearfix btn-embossed" data-toggle="dropdown">
+				                    <span class="filter-option pull-left"> Pick a color </span>&nbsp;
+				                    <span class="caret"></span></button>
+				                    <ul class="dropdown-menu" role="menu">
+				                    </ul>
+				                </div>
+				            </li>
+				            <li>
+				                <h5>Roads</h5>
+				                <div id="road-list" class="btn-group select colors">
+				                    <i class="dropdown-arrow"></i>
+				                    <button class="btn dropdown-toggle clearfix btn-embossed" data-toggle="dropdown">
+				                    <span class="filter-option pull-left"> Pick a color </span>&nbsp;
+				                    <span class="caret"></span></button>
+				                    <ul class="dropdown-menu" role="menu">
+				                    </ul>
+				                </div>
+				            </li>
+				            <li>
+				                <h5>Water</h5>
+				                <div id="water-list" class="btn-group select colors">
+				                    <i class="dropdown-arrow"></i>
+				                    <button class="btn dropdown-toggle clearfix btn-embossed" data-toggle="dropdown">
+				                    <span class="filter-option pull-left"> Pick a color </span>&nbsp;
+				                    <span class="caret"></span></button>
+				                    <ul class="dropdown-menu" role="menu">
+				                    </ul>
+				                </div>
+				            </li>
+				            <li>
+				                <h5>Parks</h5>
+				                <div id="park-list" class="btn-group select colors">
+				                    <i class="dropdown-arrow"></i>
+				                    <button class="btn dropdown-toggle clearfix btn-embossed" data-toggle="dropdown">
+				                    <span class="filter-option pull-left"> Pick a color </span>&nbsp;
+				                    <span class="caret"></span></button>
+				                    <ul class="dropdown-menu" role="menu">
+				                    </ul>
+				                </div>
+				            </li>
+				            <li>
+				                <h5>Landscape</h5>
+				                <div id="landscape-list" class="btn-group select colors">
+				                    <i class="dropdown-arrow"></i>
+				                    <button class="btn dropdown-toggle clearfix btn-embossed" data-toggle="dropdown">
+				                    <span class="filter-option pull-left"> Pick a color </span>&nbsp;
+				                    <span class="caret"></span></button>
+				                    <ul class="dropdown-menu" role="menu">
+
+				                    </ul>
+				                </div>
+				            </li>
+				           	<li>
+						        <h5>Schools</h5>
+	                			<div id="school-list" class="bootstrap-switch-square">
+				                	<input type="checkbox" checked data-toggle="switch" name="default-switch" id="switch-01" />
+				                </div>
+				            </li>
+				        </ul>
+				    </div>
+	    			<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+					<div id="map">	<!-- side options -->
+					</div>
+				</div>
+
+				<div class="content">	<!-- contents are displayed such as overall statistics, charts, maps -->
+					<div class="overview">
+						<div class="title">Overview (Residential)</div>
+					</div>
+					<div class="street_view">
+						<div class="title">Street View</div>
+						<br>
+					</div>
+					<div class="largest_houses">
+						<div class="title">Top 10 Largest Houses</div>
+					</div>
+					<div class="expensive_houses">
+						<div class="title">Top 10 Expensive Houses</div>
+					</div>
+					<div class="bar_chart">
+						<div class="title">Number of Buildings in Price Range</div>
+					</div>
+					<div class="pie_chart">
+						<div class="title">Types of Houses</div>
+					</div>
+					<div class="histogram">
+						<div class="title">Histogram of Price per Square Metre</div>
+					</div>
+					<div class="scatterplot">
+						<div class="title">Scatterplot of Price Versus Size</div>
+					</div>
+					<div class="line_chart">
+						<div class="title">Cumulative Chart of Buildings Built</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	-->
+		<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="flat-ui.min.js"></script>
+	    <script src="application.js"></script>
+	    <script src="jquery.min.js"></script>
+	    <script src="flatui-colorDrop.js"></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGKA6JP600sSVaiql7QtIYoi2V_BGT76Q&libraries=visualization,drawing,geometry,places"></script>
+		<script src="markerclusterer.js"></script>
+		<script src="script.js"></script>
+
+		<script src="chart/bar_chart.js" charset="utf-8"></script>
+		<script src="chart/overview.js" charset="utf-8"></script>
+		<script src="chart/top10.js" charset="utf-8"></script>
+		<script src="chart/pie_chart.js" charset="utf-8"></script>
+		<script src="chart/line_chart.js" charset="utf-8"></script>
+		<script src="chart/scatterplot.js" charset="utf-8"></script>
+		<script src="chart/histogram.js" charset="utf-8"></script>
+
+	</body>
+</html>

@@ -1,0 +1,209 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #e0e0eb;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+span {
+	color: #000;
+}
+
+.navbar-default {
+	background-color: #008AE6;
+	border: none;
+}
+
+.navbar-default .navbar-brand {
+    color: #B3E0FF;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #B3E0FF;
+}
+
+.navbar-default .navbar-nav:hover > li > a {
+    color: #004D80;
+    height: 53px;
+}
+
+.navbar-default .link:hover {
+	background-color: #FFF;
+}
+
+.main .map {
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 2px;
+	height: 535px;
+	border-color: #CCC;
+	margin-top: 10px;
+}
+
+.main .content {
+	position: relative;
+	width: 100%;
+	clear: left;
+}
+
+.main .content .overview {
+	position: relative;
+	width: 49.5%;
+	height: 300px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #CCC;
+	margin-top: 10px;
+	float: left;
+	clear: both;
+}
+
+.main .content .street_view {
+	position: relative;
+	width: 49.5%;
+	height: 220px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #CCC;
+	margin-top: 10px;
+	float: right;
+}
+
+
+.title {
+	background-color: #e0e0eb;
+	height: 30px;
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-right: 10px;
+}
+
+.main .content .bar_chart {
+	position: relative;
+	width: 49.5%;
+	height: 350px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 2px;
+	float: left;
+	margin-top: 10px;
+	clear: both;	
+}
+
+.bar:hover {
+  opacity: 0.7;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.main .content .largest_houses {
+	position: relative;
+	width: 49.5%;
+	height: 340px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #CCC;
+	margin-top: 10px;
+	float: left;
+	clear: both;
+}
+
+.main .content .expensive_houses {
+	position: static;
+	background-color: #FFFFFF;
+	width: 49.5%;
+	height: 340px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #CCC;
+	margin-top: 10px;
+	float: right;
+}
+
+.main .content .pie_chart {
+	position: relative;
+	background-color: #FFFFFF;
+	width: 49.5%;
+	height: 350px;
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 2px;
+	float: right;
+	margin-top: 10px;	
+}
+
+.arc:hover {
+	opacity: 0.7;
+}
+
+.main .content .line_chart {
+	position: relative;
+	width: 49.5%;
+	height: 350px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 2px;
+	float: left;
+	margin-top: 10px;	
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.main .content .scatterplot {
+	position: relative;
+	width: 49.5%;
+	height: 350px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 2px;
+	float: right;
+	margin-top: 10px;	
+}
+
+.dot {
+  stroke: #000;
+}
+
+.main .content .histogram {
+	position: relative;
+	width: 49.5%;
+	height: 350px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 2px;
+	float: left;
+	margin-top: 10px;
+	clear: both;	
+}

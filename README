@@ -1,0 +1,17 @@
+Dean's Research Award - Real Estate Project (Client)
+
+Names: Daniel Choi
+       Yu Zhu
+
+Overview:
+
+The project aims to visualize data to enable potential clients to obtain and gain a better understanding of the trends that exists within the data.
+
+The project is separated into two components, back-end (server) and front-end (client). However, this repository only contains the front-end component of the project. Since these two components are separate, localized and incomplete dataset is used for testing purposes and local server must be set up in order to access the main website.
+
+Instructions:
+
+-To set up the server, "server.py" file must be run through Python 3
+-The local server can be accessed by a browser with the url "localhost:4000"
+-The directory for the main website is /website/website.html or the url "localhost:4000/website/website.html"
+
